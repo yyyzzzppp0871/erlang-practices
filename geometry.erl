@@ -5,6 +5,6 @@ area({rectangle, Width, Height}) 	-> Width * Height;
 area({square, Side})				-> Side * Side.
 
 test() ->
-	12 = area({rectangle, 31, 4}),
+	12 = area({rectangle, 3, 4}),
 	144 = area({square, 12}),
 	tests_worked.
