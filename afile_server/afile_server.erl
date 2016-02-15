@@ -4,7 +4,7 @@
 start(Dir) -> spawn(afile_server, loop, [Dir]).
 
 loop(Dir) ->
-	%% 等待指令
+	
 	receive
 		{Client, list_dir} ->
 			Client ! {self(), file:list_dir(Dir)};
